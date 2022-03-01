@@ -15,6 +15,11 @@ elForm.addEventListener("submit", function (e) {
     tekst.classList.remove("d-none");
     tekst.innerHTML = "Iltimos raqam kiritsangiz!!!";
     elInput.value = "";
+  } else if (elInput.value.length == 0) {
+    cont.classList.add("d-none");
+    tekst.classList.remove("d-none");
+    tekst.innerHTML = "Iltimos nimadir kiritsangiz!!!";
+    elInput.value = "";
   } else if (elInput.value % 2 == 0) {
     cont.classList.remove("d-none");
     tekst.classList.add("d-none");
